@@ -36,15 +36,19 @@
     <div class="vbx-table-section vbx-export-flow">
 <?php if(count($flows)): ?>
 		<form method="post" action="">
-			<p>
-				<select name="id">
+			<fieldset class="vbx-input-container">
+				<p>
+					<label class="field-label">
+						<select name="id" class="medium">
 <?php foreach($flows as $flow): ?>
-					<option value="<?php echo $flow->values['id']; ?>"<?php echo $_POST['id']==$flow->values['id']?' selected="selected"':''; ?>><?php echo $flow->values['name']; ?></option>
+							<option value="<?php echo $flow->values['id']; ?>"<?php echo $_POST['id']==$flow->values['id']?' selected="selected"':''; ?>><?php echo $flow->values['name']; ?></option>
 <?php endforeach; ?>
-				</select>
-			</p>
-			<p><label><input type="checkbox" name="file" /> Save as file</label></p>
-			<p><input type="submit" value="Export" /></p>
+						</select>
+					</label>
+				</p>
+				<p><label><input type="checkbox" name="file" /> Save as file</label></p>
+				<p><button type="submit" class="submit-button"><span>Export</span></button></p>
+			</fieldset>
 		</form>
 <?php if($export): ?>
 		<h3>Write this down!</h3>
@@ -54,5 +58,4 @@
 		<h3>You do not have any flows.</h3>
 <?php endif; ?>
     </div>
-
 </div>
