@@ -40,11 +40,13 @@
 	</div><!-- .vbx-content-menu -->
     <div class="vbx-table-section vbx-import-flow">
 		<form method="post" action="" enctype="multipart/form-data">
-			<p><label>Flow name<br/><input type="text" name="name" /></label></p>
-			<p><label>File<br/><input type="file" name="file" /></label></p>
-			<p>or</p>
-			<p><label>Paste<br/><textarea rows="20" cols="100" name="data"></textarea></label></p>
-			<p><input type="submit" value="Import" /></p>
+			<fieldset class="vbx-input-container">
+				<p><label class="field-label">Flow name<br/><input type="text" name="name" class="medium" /></label></p>
+				<p><label class="field-label">File<br/><input type="file" name="file" class="medium" /></label></p>
+				<p>or</p>
+				<p><label class="field-label">Paste<br/><textarea rows="20" cols="100" name="data" class="medium"></textarea></label></p>
+				<p><button type="submit" class="submit-button"><span>Import</span></button></p>
+			</fieldset>
 		</form>
 <?php if($error): ?>
 		<p>Invalid import.</p>
