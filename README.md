@@ -9,7 +9,6 @@ This plugin allows you to import and export OpenVBX flows for quick copying or b
 [1]: https://github.com/chadsmith/OpenVBX-Plugin-Export/archives/master
 
 ## Usage
------------------------------
 
 Once installed, IMPORT / EXPORT will appear in the OpenVBX sidebar.
 
